@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Site-wide owner details (name, contact links, toolkit) live in `src/lib/site.ts` and portfolio entries in `src/lib/portfolio.ts`, so content edits happen in one place.
+- Each content section is its own route (about, services, process, portfolio, contact) for SEO; the shared header/footer wrap `<Outlet />` in `__root.tsx`.
